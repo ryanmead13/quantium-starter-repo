@@ -4,7 +4,7 @@ import pandas as pd
 
 app = Dash()
 
-df = pd.read_csv('combined_pink_morsel_sales_data.csv')
+df = pd.read_csv('data/combined_pink_morsel_sales_data.csv')
 
 fig = px.line(df,
               x='date',
