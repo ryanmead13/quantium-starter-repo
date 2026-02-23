@@ -7,7 +7,7 @@ app = Dash(__name__)
 df = pd.read_csv('data/combined_pink_morsel_sales_data.csv')
 
 app.layout = html.Div(children=[
-    html.H1(children="Pink Morsel Sales Data", style={}),
+    html.H1(children="Pink Morsel Sales Data", style={}, id='header'),
     html.Div(children='''
         A timeline of sales of the pink morsel pre and post price change.
     '''),
